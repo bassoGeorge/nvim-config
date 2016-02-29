@@ -1,0 +1,39 @@
+[submodule "bundle/SimpylFold"]
+	path = bundle/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold.git
+[submodule "bundle/indentPython"]
+	path = bundle/indentPython
+	url = https://github.com/vim-scripts/indentpython.vim
+[submodule "bundle/colors-solarized"]
+	path = bundle/colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/ctrlP"]
+	path = bundle/ctrlP
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "bundle/scala"]
+	path = bundle/scala
+	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/tmhedberg/matchit
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "bundle/ansible-yml"]
+	path = bundle/ansible-yml
+	url = git://github.com/chase/vim-ansible-yaml.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/gabrielelana/vim-markdown.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe

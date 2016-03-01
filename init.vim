@@ -18,10 +18,10 @@ set ttyfast
 "set encoding=utf-8 nobomb
 
 " Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
+set backupdir=~/.config/nvim/backups
+set directory=~/.config/nvim/swaps
 if exists("&undodir")
-    set undodir=~/.vim/undo
+    set undodir=~/.config/nvim/undo
 endif
 
 set viminfo+=! " make sure vim history works

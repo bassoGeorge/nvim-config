@@ -37,3 +37,9 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "bundle/typescript"]
+	path = bundle/typescript
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/autoformat"]
+	path = bundle/autoformat
+	url = https://github.com/Chiel92/vim-autoformat

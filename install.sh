@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo npm install -g js-beautify
 git submodule init
 git submodule update --recursive
 cd bundle/YouCompleteMe

@@ -38,6 +38,8 @@ set title
 " Disable error bells
 set noerrorbells
 
+" Show all characters
+set list
 
 " -------------------- Searching and replace ----------------------------
 " Add the g flag to search/replace by default
@@ -65,10 +67,11 @@ syntax on
 set expandtab
 
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
 
-" Number of spaces used for auto indent, I like 2 everywhere
-set shiftwidth=2
+" Number of spaces used for auto indent, I like 2 everywhere but office requires
+" 4
+set shiftwidth=4
 
 " Enable line numbers
 set number
@@ -129,7 +132,7 @@ colorscheme solarized
 let coffee_watch_vert = 1
 
 " Add the current branch using fugitive to the status line
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+" set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 
 " ------------- Mappings ----------------------------------------------
@@ -177,6 +180,9 @@ noremap <leader>c <C-w>c
 noremap <leader>x <C-w>x
 noremap <leader>o <C-w>o
 
+map <leader>] :bn<CR>
+map <leader>[ :bp<CR>
+
 
 " Both the auxilary windows at the pinkies
 map <leader>a :NERDTreeToggle<CR>
@@ -217,3 +223,25 @@ noremap <F3> :Autoformat<CR>
 " set shortmess=atI
 " Show the (partial) command as it’s being typed
 " set showcmd
+"
+
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+" let g:syntastic_auto_loc_list = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_mode_map = {
+  \ "mode": "passive",
+  \ "active_filetypes": ["HTML", "css"] }
+
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
+let g:indent_guides_guide_size = 1

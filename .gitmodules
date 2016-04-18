@@ -43,3 +43,21 @@
 [submodule "bundle/autoformat"]
 	path = bundle/autoformat
 	url = https://github.com/Chiel92/vim-autoformat
+[submodule "bundle/jinja"]
+	path = bundle/jinja
+	url = https://github.com/lepture/vim-jinja.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "bundle/airline-themes"]
+	path = bundle/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "bundle/tComment"]
+	path = bundle/tComment
+	url = https://github.com/tomtom/tcomment_vim
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git

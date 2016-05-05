@@ -61,3 +61,9 @@
 [submodule "bundle/indent-guides"]
 	path = bundle/indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/unipaired"]
+	path = bundle/unipaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = git://github.com/tpope/vim-repeat.git

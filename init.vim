@@ -15,7 +15,7 @@ set mouse=a
 set ttyfast
 
 " Use UTF-8 without BOM
-"set encoding=utf-8 nobomb
+set encoding=utf-8
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.config/nvim/backups
@@ -180,10 +180,6 @@ noremap <leader>c <C-w>c
 noremap <leader>x <C-w>x
 noremap <leader>o <C-w>o
 
-map <leader>] :bn<CR>
-map <leader>[ :bp<CR>
-
-
 " Both the auxilary windows at the pinkies
 map <leader>a :NERDTreeToggle<CR>
 map <leader>; :TagbarToggle<CR>
@@ -197,41 +193,14 @@ map <leader>g :YcmCompleter goToDefinitionElseDeclaration<CR>
 
 noremap <F3> :Autoformat<CR>
 
+let g:tagbar_width = 30
+let g:tagbar_autofocus = 1
+let g:tagbar_autoclose = 1
 
-" ----------- Garbage ------------------------------------------------
-
-"map <C-J> <C-W>j<C-W>_ " open and maximize the split below
-"map <C-K> <C-W>k<C-W>_ " open and maximize the split above
-
-
-" Enable per-directory .vimrc files and disable unsafe commands in them
-" set exrc
-" set secure
-" Show “invisible” characters
-"set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-"set list
-"
-" Highlight searches
-" set hlsearch
-"
-" Respect modeline in files
-" set modeline
-" set modelines=4
-
-
-" Don’t show the intro message when starting Vim
-" set shortmess=atI
-" Show the (partial) command as it’s being typed
-" set showcmd
-"
-
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
 
 " let g:syntastic_auto_loc_list = 0
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_mode_map = {
@@ -245,3 +214,5 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 let g:indent_guides_guide_size = 1
+
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']

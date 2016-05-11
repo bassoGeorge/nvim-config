@@ -108,8 +108,6 @@ filetype plugin indent on
 
 " Some autocommands based on filetypes
 if has("autocmd")
-    " Treat .json files as .js
-    autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 
     " Auto fold coffeesript files using indentation, may not need it
     autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable

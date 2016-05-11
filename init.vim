@@ -183,6 +183,7 @@ noremap <leader>o <C-w>o
 " Both the auxilary windows at the pinkies
 map <leader>a :NERDTreeToggle<CR>
 map <leader>; :TagbarToggle<CR>
+map <F4> :SyntasticCheck<CR>
 "
 " noremap <Space> za
 

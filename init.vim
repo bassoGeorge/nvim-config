@@ -191,6 +191,9 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter goToDefinitionElseDeclaration<CR>
 
 noremap <F3> :Autoformat<CR>
+noremap <F8> :Gstatus<CR>
+noremap <F9> :Gdiff<CR>
+noremap <F5> :Ggrep -F "
 
 let g:tagbar_width = 30
 let g:tagbar_autofocus = 1
@@ -205,6 +208,9 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {
   \ "mode": "passive",
   \ "active_filetypes": ["HTML", "css"] }
+
+let g:syntastic_python_python_exec = '/usr/bin/python3'
+
 
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
